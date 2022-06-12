@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    text-align: center;
+    /* background: url("https://img.freepik.com/free-vector/waving-indian-flag-design-with-blue-chakra_1017-23041.jpg?t=st=1655029330~exp=1655029930~hmac=8f460bc848bd6061f1adb7e7d627140052c3cf003b96e2a010f93b3f524b8a80&w=740"); */
+    /* background: url("https://i.pinimg.com/736x/e3/31/5b/e3315b5c1959e6c9c0527c278d2db836.jpg"); */
+    background: url(./src/background.jpg);
+    /* image is copied from pintress without any permission just for educational purpose */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+
+/* body glass effect  */
+body {
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 5px;
+    color: rgba(255, 255, 255, 0.850);
+    /* color: #333;
+    font-family: sans-serif;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 500px;
+    padding: 1rem 2rem; */
+}
+
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+    body {
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    .warning {
+        display: none;
+    }
+}
+
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+header p {
+    font-weight: 800;
+}
+
+header p span {
+    font-weight: 400;
+    font-style: italic;
+}
+
+figcaption {
+    padding-top: 0;
+    font-style: italic;
+}
+
+.dull-back {
+    /* background-color: rgba(255, 255, 255, 0.8); */
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.center {
+    text-align: center;
+}
+
+.bold {
+    font-weight: 800;
+}
+
+.timeline-date {
+    border-bottom: 2px solid black
+}
+
+#image1 {
+    width: 500px;
+    border-radius: 25px;
+    margin-top: -30px;
+}
+
+
+
+.intro-text {
+    font-size: 18px;
+    text-align: justify;
+    margin: 10px 0;
+}
+
+
+
+.timeline {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.timeline-blocks {
+    /* background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: saturate(180%) blur(10px); */
+    width: 100%;
+    max-width: 500px;
+    margin: 3px;
+}
+
+
+
+/* timeline glass effect  */
+.glass-effect {
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 5px;
+    color: #333;
+    font-family: sans-serif;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 500px;
+    padding: 1rem 2rem;
+}
+
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+    .glass-effect {
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    .warning {
+        display: none;
+    }
+}
+
+
+
+/* heading gradient color effect  */
+.gradient-text {
+    /* Fallback: Set a background color. */
+    background-color: red;
+
+    /* Create the gradient. */
+    background-image: linear-gradient(orange, white, green);
+
+    /* Set the background size and repeat properties. */
+    background-size: 100%;
+    background-repeat: repeat;
+
+    /* Use the text as a mask for the background. */
+    /* This will show the gradient as a text color rather than element bg. */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+
+
+/* image change  */
+.card {
+    width: 480px;
+    height: 320px;
+    background: url("./src/slide\ 1.webp") no-repeat;
+    background-size: contain;
+    display: inline-block;
+}
+
+.card:hover {
+    background: url("./src/slide\ 2.webp") no-repeat;
+}
